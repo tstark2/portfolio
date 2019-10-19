@@ -8,48 +8,89 @@
     <title>Todd Stark II</title>
 </head>
 <body>
+    <button id="menuButton"><object type="image/svg+xml" data="img/icons/menu.svg"></object></button>
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#work">My Work</a>
+        <a href="#about">About Me</a>
+        <a href="/resume.html">Resume</a>
+    </nav>
     <main>
-        <section id="hero">
-            <h1>Hi! I'm Todd</h1>
-            <p>I'm a Software Engineer from Peoria, Illinois</p>
-        </section>
-        <section id="work">
-            <h2>My Work</h2>
-        </section>
-        <section id="aboutMe">
-            <h2>About Me</h2>
-            <article id="experience">
-                <h3>Experience</h3>
-                <div>
-                    <p class="title">Developer</p>
-                    <p class="company">Sora Technologies, LLC</p>
-                    <p class="dates">November 2014 - October 2019</p>
+       <section id="hero">
+           <h1>Hi! I'm Todd</h1>
+           <p>I build things for the web</p>
+       </section>
+       <section id="work">
+           <h2>My Work</h2>
+           <div class="container">
+               <div class="example">
+                   <img src="img/soratechDevScreenshot.png" alt="Screenshot of Soratech.dev" />
+                   <div class="flyover">
+                       <p class="name">soratech.dev</p>
+                       <ul>
+                           <li>HTML</li>
+                           <li>CSS</li>
+                           <li>JavaScript</li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="example">
+                    <img src="img/kintripScreenshot.png" alt="Screenshot of Kintrip" />
+                    <div class="flyover">
+                        <p class="name">Kintrip</p>
+                        <ul>
+                            <li>Yii2</li>
+                            <li>AWS</li>
+                            <li>Swift</li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <p class="title">Jr. Developer</p>
-                    <p class="company">OneHat Technologies, LLC</p>
-                    <p class="dates">September 2012 - March 2013</p>
+                <div class="example">
+                    <img src="img/dadABaseScreenshot.png" alt="Screenshot of the Dad-a-Base" />
+                    <div class="flyover">
+                        <p class="name">Dad-a-Base</p>
+                        <ul>
+                            <li>PHP</li>
+                            <li>JavaScript</li>
+                            <li>MariaDB</li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <p class="title">Co-Founder</p>
-                    <p class="company">Quad Cities Paintball, LLC</p>
-                    <p class="dates">August 2011 - November 2012</p>
+                <div class="example">
+                    <img src="img/duckHuntScreenshot.png" alt="Screenshot of Duck Hunt" />
+                    <div class="flyover">
+                        <p class="name">Duck Hunt</p>
+                        <ul>
+                            <li>jQuery</li>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
                 </div>
-            </article>
-            <article id="education">
-                <h3>Education</h3>
-                <div>
-                    <p class="degree">Bachelor of Science, Web Design &amp; Development</p>
-                    <p class="school">Full Sail University, Online</p>
-                    <p class="date">2015</p>
+                <div class="example">
+                    <img src="img/soraDashboardScreenshot.png" alt="Screenshot of Sora's Dashboard" />
+                    <div class="flyover">
+                        <p class="name">Sora Dashboard</p>
+                        <ul>
+                            <li>Go</li>
+                            <li>PostgreSQL</li>
+                            <li>REST</li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <p class="degree">Associate of Applied Science, Web Systems</p>
-                    <p class="school">Illinois Central College, East Peoria, IL</p>
-                    <p class="date">2012</p>
+                <div class="example">
+                    <img src="img/bender.png" alt="Screenshot of Bender" />
+                    <div class="flyover">
+                        <p class="name">Bender</p>
+                        <ul>
+                            <li>Go</li>
+                            <li>Slack</li>
+                            <li>Azure</li>
+                        </ul>
+                    </div>
                 </div>
-            </article>
-        </section>
+           </div>
+       </section>
     </main>
     <script src="js/index.js" type="module"></script>
 </body>

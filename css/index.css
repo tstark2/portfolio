@@ -1,1 +1,49 @@
 /* index.css */
+
+#work .container {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:10px;
+}
+
+#work .example {
+    position: relative;
+}
+
+#work .example img {
+    max-width:100%;
+    height:auto;
+}
+
+#work .flyover {
+    position:absolute;
+    left:0;
+    bottom:0;
+    background:rgba(0,0,0,0.75);
+    width:100%;
+    color:#fff;
+    padding:0 12px;
+    text-align:center;
+    box-sizing:border-box;
+    height:0;
+    transition:height .75s;
+}
+
+#work .flyover.open {
+    height:40%;
+}
+
+#work .flyover .name {
+    font-size:1.25em;
+}
+
+#work .flyover ul {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0;
+}
+
+#work .flyover li {
+    list-style-type:none;
+}
