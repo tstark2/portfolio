@@ -20,7 +20,7 @@ body {
     }
 }
 
-#hero {
+header {
     min-height:100vh;
     position:relative;
     display:flex;
@@ -217,7 +217,7 @@ main h2 {
 #contact {
     text-align:center;
     color:#fff;
-    padding-bottom:20px;
+    padding-bottom:30px;
 }
 
 #icons {
@@ -249,4 +249,14 @@ main h2 {
     #icons object {
         height:2.25em;
     }
+}
+
+footer {
+    background-color:#000;
+    color:#fff;
+    text-align:center;
+}
+
+footer p {
+    margin:0;
 }
