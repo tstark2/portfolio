@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
             flyover.classList.remove('open');
         });
 
-        example.addEventListener('click', e => {
-            const name = e.currentTarget.dataset.name
-            window.location.assign(`workDetails.html?name=${name}`);
-        });
+        // example.addEventListener('click', e => {
+        //     const name = e.currentTarget.dataset.name
+        //     window.location.assign(`workDetails.html?name=${name}`);
+        // });
     }
 
     document.getElementById('menuButton').addEventListener('click', e => {

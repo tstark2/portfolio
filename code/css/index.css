@@ -5,21 +5,25 @@
     --horizontalMargin:calc(33vw / 2);
 }
 
-main {
-    width:65vw;
-    margin:0 auto;
+body {
+    padding:0;
+    margin:0;
+    font-family: 'Catamaran', sans-serif;
 }
 
 #menuButton {
-    cursor:pointer;
+    /* cursor:pointer;
     position:fixed;
     right:20px;
     top:20px;
-    border-radius:5px;
-    border:0;
-    background-color:#ccc;
+    border:0; */
     padding:6px 12px;
+    background-color:transparent;
+}
 
+#menuButton object {
+    height:40px;
+    width:auto;
 }
 
 #menuButton > * {
@@ -81,6 +85,25 @@ nav p {
     font-style:italic;
 }
 
+.wrapper {
+    width:80vw;
+    margin:0 auto;
+}
+
+#hero {
+    background-color:#f00;
+    color:#fff;
+}
+
+#hero h1 {
+    margin:0;
+}
+
+#hero img {
+    height:300px;
+    width:auto;
+}
+
 #work .container {
     display:grid;
     grid-template-columns:repeat(3, 1fr);
@@ -89,7 +112,6 @@ nav p {
 
 #work .example {
     position: relative;
-    cursor:pointer;
 }
 
 #work .example img {
@@ -128,6 +150,18 @@ nav p {
     margin:0;
 }
 
+#work .flyover a {
+    color:#fff;
+    padding:6px 12px;
+    border:2px solid #fff;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+#work .flyover a:hover {
+    text-decoration:underline;
+}
+
 #work .flyover ul {
     display:flex;
     justify-content:space-between;
@@ -147,6 +181,14 @@ nav p {
     display:grid;
     grid-template-columns:repeat(2, 1fr);
     gap:30px;
+}
+
+#about img {
+    width:auto;
+    height:300px;
+    border-radius:50%;
+    border:2px solid #000;
+    background-color:#f00;
 }
 
 #contact a > * {
