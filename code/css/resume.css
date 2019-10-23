@@ -1,2 +1,139 @@
 /* resume.css */
 
+body {
+    font-family:'Lusitana', serif;
+}
+
+h1, .tagline {
+    text-align: center;
+}
+
+h2 {
+    border-bottom:1px solid #606060;
+}
+
+.wrapper {
+    width:70vw;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 33% 1fr;
+}
+
+@media print {
+    .wrapper {
+        width:100%;
+    }
+}
+
+aside {
+    border-right:2px solid #000;
+    padding-right:12px;
+}
+
+#contact a, #contact p {
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    text-decoration:none;
+    color:#000;
+}
+
+#contact object {
+    margin-right:10px;
+}
+
+#contact p {
+    margin:0;
+}
+
+#skills div {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:12px;
+}
+
+@media print {
+    #skills div {
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+#skills .skill {
+    background-color:#606060;
+    -webkit-print-color-adjust: exact;
+    color:#fff;
+    padding:6px;
+    border-radius:5px;
+    text-align:center;
+    font-size:0.9em;
+}
+
+#certifications p {
+    margin:0;
+}
+
+#certifications .title {
+    font-weight:bold;
+}
+
+#certifications .issuer {
+    color:#606060;
+    font-style:italic;
+}
+
+#certifications .date {
+    color:#606060;
+}
+
+main {
+    padding:0 12px;
+}
+
+#experience h2 {
+    margin-top:0;
+}
+
+#experience p {
+    margin:0;
+}
+
+#experience .title {
+    font-size:1.125em;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+#experience .company {
+    font-weight:bold;
+    margin-top:6px;
+}
+
+#experience .location {
+    color:#606060;
+    font-style:italic;
+}
+
+#experience .dates {
+    color:#606060;
+}
+
+#experience ul {
+    margin:0;
+}
+
+#education article {
+    margin-bottom:15px;
+}
+
+#education p {
+    margin:0;
+}
+
+#education .degree {
+    font-size:1.125em;
+    font-weight:bold;
+}
+
+#education .accolade {
+    color:#606060;
+}
