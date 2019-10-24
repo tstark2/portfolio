@@ -11,5 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const flyover = e.currentTarget.querySelector('.flyover');
             flyover.classList.remove('open');
         });
+
+        example.addEventListener('touchstart', e => {
+            const flyover = e.currentTarget.querySelector('.flyover');
+
+            if(flyover.classList.contains('open')) {
+                flyover.classList.remove('open');
+            } else {
+                flyover.classList.add('open');
+            }
+        });
     }
 });

@@ -47,6 +47,7 @@ header {
     z-index:1;
     background-position:center;
     padding-bottom:4px;
+    background-repeat:no-repeat;
 }
 
 #heroText {
@@ -72,6 +73,34 @@ header {
 
     #heroText p {
         font-size:1.25em;
+    }
+}
+
+@media screen and (max-width:850px) and (orientation:portrait){
+    #heroBackground {
+        background: 
+        linear-gradient(
+            rgba(255,0,0,0.75),
+            rgba(0,0,255,0.45)
+        ),
+        url(../img/deskMobile.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+    }
+}
+
+@media screen and (max-width:850px) and (orientation:landscape){
+    #heroBackground {
+        background: 
+        linear-gradient(
+            rgba(255,0,0,0.75),
+            rgba(0,0,255,0.45)
+        ),
+        url(../img/desk.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
     }
 }
 
@@ -195,6 +224,10 @@ main h2 {
     display:flex;
     justify-content:space-between;
     align-items:center;
+}
+
+#about a {
+    color:#fff;
 }
 
 #about img {
