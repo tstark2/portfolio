@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
             flyover.classList.remove('open');
         });
 
-        example.addEventListener('touchstart', e => {
+        example.addEventListener('touchend', e => {
+            e.preventDefault();
             const flyover = e.currentTarget.querySelector('.flyover');
 
             if(flyover.classList.contains('open')) {

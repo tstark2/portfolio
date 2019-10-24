@@ -156,13 +156,6 @@ main h2 {
     position: relative;
 }
 
-/* #work .example:last-of-type {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background-color:#fff;
-} */
-
 #work .example img {
     max-width:100%;
     height:auto;
