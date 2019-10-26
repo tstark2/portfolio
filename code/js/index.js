@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const examples = document.querySelectorAll('#work .example');
     for(const example of examples) {
-        example.addEventListener('touchstart', e => {
+        example.addEventListener('click', e => {
             const flyover = e.currentTarget.querySelector('.flyover');
 
             if(e.target.tagName != 'A') {
