@@ -5,13 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
         example.addEventListener('click', e => {
             const flyover = e.currentTarget.querySelector('.flyover');
 
-            if(e.target.tagName != 'A') {
-                if(flyover.classList.contains('open')) {
-                    flyover.classList.remove('open');
-                } else {
-                    flyover.classList.add('open');
-                }
-            }
+            flyover.classList.add('open');
+
+            // if(e.target.tagName != 'A') {
+            //     if(flyover.classList.contains('open')) {
+            //         flyover.classList.remove('open');
+            //     } else {
+            //         flyover.classList.add('open');
+            //     }
+            // }
         });
     }
 
