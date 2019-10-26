@@ -1,34 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const examples = document.querySelectorAll('#work .example');
+    // if touch is enabled, respond to touch events
+    window.addEventListener('touchstart', () => {
+        document.getElementById('work').classList.remove('hover');
+    });
+
+    const examples = document.querySelectorAll('#work:not(hover) .example');
     for(const example of examples) {
-        example.addEventListener('click', e => {
+        example.addEventListener('touchend', e => {
             const flyover = e.currentTarget.querySelector('.flyover');
 
-            // flyover.classList.add('open');
-
-            // if(e.target.tagName != 'A') {
-            //     if(flyover.classList.contains('open')) {
-            //         flyover.classList.remove('open');
-            //     } else {
-            //         flyover.classList.add('open');
-            //     }
-            // }
-
-            console.log('clicked');
+            if(e.target.tagName != 'A') {
+                if(flyover.classList.contains('open')) {
+                    flyover.classList.remove('open');
+                } else {
+                    flyover.classList.add('open');
+                }
+            }
         });
     }
-
-    // const flyovers = document.querySelectorAll('#work .flyover');
-    // for(const flyover of flyovers) {
-    //     flyover.addEventListener('click', e => {
-    //         const over = e.currentTarget;
-
-    //         if(over.classList.contains('open')) {
-    //             over.classList.remove('open');
-    //         } else {
-    //             over.classList.add('open');
-    //         }
-    //     });
-    // }
 });
