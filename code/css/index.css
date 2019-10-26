@@ -156,6 +156,11 @@ main h2 {
     position: relative;
 }
 
+#work .example:hover > .flyover {
+    height:100%;
+    padding:6px 12px;
+}
+
 #work .example img {
     max-width:100%;
     height:auto;
