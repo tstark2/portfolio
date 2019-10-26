@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         example.addEventListener('click', e => {
             const flyover = e.currentTarget.querySelector('.flyover');
 
-            flyover.classList.add('open');
+            // flyover.classList.add('open');
 
             // if(e.target.tagName != 'A') {
             //     if(flyover.classList.contains('open')) {
@@ -14,19 +14,21 @@ document.addEventListener('DOMContentLoaded', () => {
             //         flyover.classList.add('open');
             //     }
             // }
+
+            console.log('clicked');
         });
     }
 
-    const flyovers = document.querySelectorAll('#work .flyover');
-    for(const flyover of flyovers) {
-        flyover.addEventListener('click', e => {
-            const over = e.currentTarget;
+    // const flyovers = document.querySelectorAll('#work .flyover');
+    // for(const flyover of flyovers) {
+    //     flyover.addEventListener('click', e => {
+    //         const over = e.currentTarget;
 
-            if(over.classList.contains('open')) {
-                over.classList.remove('open');
-            } else {
-                over.classList.add('open');
-            }
-        });
-    }
+    //         if(over.classList.contains('open')) {
+    //             over.classList.remove('open');
+    //         } else {
+    //             over.classList.add('open');
+    //         }
+    //     });
+    // }
 });
