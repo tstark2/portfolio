@@ -14,4 +14,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    const flyovers = document.querySelectorAll('#work .flyover');
+    for(const flyover of flyovers) {
+        flyover.addEventListener('click', e => {
+            const over = e.currentTarget;
+
+            if(over.classList.contains('open')) {
+                over.classList.remove('open');
+            } else {
+                over.classList.add('open');
+            }
+        });
+    }
 });
