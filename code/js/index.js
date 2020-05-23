@@ -19,4 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    document.getElementById('copyYear').textContent = new Date().getFullYear();
 });
