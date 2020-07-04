@@ -156,9 +156,27 @@ main h2 {
     position: relative;
 }
 
-#work.hover .example:hover > .flyover {
-    height:100%;
-    padding:6px 12px;
+#work .example .opener {
+    display:none;
+}
+
+@media screen and (max-width:850px) {
+
+    #work .example .opener {
+        position:absolute;
+        bottom:10px;
+        left:50%;
+        background-color:var(--transparentBlack);
+        transform:translateX(-50%);
+        border:0;
+        border-radius:5px;
+        width:40px;
+        display:block;
+    }
+}
+
+#work .example .opener object {
+    pointer-events:none;
 }
 
 #work .example img {
@@ -184,7 +202,13 @@ main h2 {
     overflow:hidden;
 }
 
+
 #work .flyover.open {
+    height:100%;
+    padding:6px 12px;
+}
+
+#work.hover .example:hover > .flyover {
     height:100%;
     padding:6px 12px;
 }
