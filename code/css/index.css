@@ -170,13 +170,17 @@ main h2 {
         transform:translateX(-50%);
         border:0;
         border-radius:5px;
-        width:40px;
-        display:block;
+        min-width:40px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
     }
 }
 
 #work .example .opener object {
     pointer-events:none;
+    height:40px;
+    width:auto;
 }
 
 #work .example img {
