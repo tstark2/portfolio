@@ -140,6 +140,37 @@ main h2 {
     padding-top:20px;
 }
 
+#skills .wrapper {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:12px;
+}
+
+#skills .wrapper div {
+    text-align:center;
+    padding:3px 12px;
+}
+
+#skills #databases {
+    border-left:1px solid #fff;
+    border-right:1px solid #fff;
+}
+
+#skills .wrapper ul {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+    padding:0;
+}
+
+#skills .wrapper ul li {
+    list-style-type:none;
+    background-color:var(--transparentBlack);
+    color:#fff;
+    padding:6px 12px;
+    border-radius:5px;
+}
+
 #work .container {
     display:grid;
     grid-template-columns:repeat(2, 1fr);
@@ -147,8 +178,15 @@ main h2 {
 }
 
 @media screen and (max-width:850px) {
-    #work .container {
+    #work .container, #skills .wrapper {
         grid-template-columns:1fr;
+    }
+
+    #skills #databases {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-left:0;
+        border-right:0;
     }
 }
 
@@ -258,6 +296,7 @@ main h2 {
     display:flex;
     justify-content:space-between;
     align-items:center;
+    padding-top:20px;
 }
 
 #about a {
