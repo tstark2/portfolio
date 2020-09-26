@@ -16,7 +16,7 @@ h2 {
     width:70vw;
     margin:0 auto;
     display:grid;
-    grid-template-columns: 33% 1fr;
+    grid-template-columns: 25% 1fr;
 }
 
 @media print {
@@ -100,7 +100,7 @@ main {
 #experience .title {
     font-size:1.125em;
     font-weight:bold;
-    margin-top:15px;
+    margin-top:10px;
 }
 
 #experience .company {
