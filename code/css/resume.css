@@ -10,6 +10,7 @@ h1, .tagline {
 
 h2 {
     border-bottom:1px solid #606060;
+    margin-bottom:12px;
 }
 
 .wrapper {
@@ -40,6 +41,7 @@ aside {
 
 #contact object {
     margin-right:10px;
+    max-width:24px;
 }
 
 #contact p {
@@ -48,14 +50,8 @@ aside {
 
 #skills div {
     display:grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(2, 1fr);
     gap:12px;
-}
-
-@media print {
-    #skills div {
-        grid-template-columns:repeat(2, 1fr);
-    }
 }
 
 #skills .skill {
