@@ -9,187 +9,178 @@
     <title>Todd Stark II</title>
 </head>
 <body>
-    <header id="hero">
-        <div id="heroBackground"></div>
-        <div id="heroText">
-            <h1>Hi! I'm Todd</h1>
-            <p>I'm a Web Developer from Dunlap, IL</p>
-            <p>I specialize in creating web applications in JavaScript &amp; Go</p>
-            <p>I've been turning coffee into code since 2011</p>
-            <object data="img/icons/chevron-triple-down.svg" type="image/svg+xml" id="downArrows"></object>
+<header id="hero">
+    <div id="heroBackground"></div>
+    <div id="heroText">
+        <h1>Hi! I'm Todd</h1>
+        <p>I'm a Web Developer from Dunlap, IL</p>
+        <p>I specialize in creating web applications in JavaScript &amp; Go</p>
+        <p>I've been turning coffee into code since 2011</p>
+        <object data="img/icons/chevron-triple-down.svg" type="image/svg+xml" id="downArrows"></object>
+    </div>
+</header>
+<main>
+    <section id="work" class="hover">
+        <div class="wrapper">
+            <h2>My Work</h2>
+            <div class="container">
+                <div class="example">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="img/chapterZMobile.webp" type="image/webp">
+                        <source media="(max-width: 500px)" srcset="img/chapterZMobile.png" type="image/png">
+                        <source srcset="img/chapterZ.webp" type="image/webp">
+                        <img src="img/chapterZ.png" alt="Screenshot of Chapter Z Website"/>
+                    </picture>
+                    <button class="opener">
+                        <object data="img/icons/chevron-up.svg" type="image/svg+xml"></object>
+                    </button>
+                    <div class="flyover">
+                        <p class="name">Chapter Z Website</p>
+                        <p class="description">The website of the local chapter of the GoldWing Road Rider's
+                            Association, Chapter Z.</p>
+                        <a href="https://www.il-chapter-z.org" target="_blank">Visit Site &gt;</a>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Vue</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="example">
+                    <picture>
+                        <source srcset="img/kintripMobile.webp" type="image/webp" media="(max-width:500px)">
+                        <source srcset="img/kintripMobile.jpg" media="(max-width:500px)" type="image/jpg">
+                        <source srcset="img/kintripScreenshot.webp" type="image/webp" media="(min-width:500px)">
+                        <img src="img/kintripScreenshot.jpg" alt="Screenshot of Kintrip">
+                    </picture>
+                    <button class="opener">
+                        <object data="img/icons/chevron-up.svg" type="image/svg+xml"></object>
+                    </button>
+                    <div class="flyover">
+                        <p class="name">Kintrip</p>
+                        <p class="description">Kintrip was a hyper-focused social media platform for traveling
+                            families.</p>
+                        <!--                            <a href="https://kintrip.com" target="_blank">Visit Site &gt;</a>-->
+                        <ul>
+                            <li>Yii2</li>
+                            <li>AWS</li>
+                            <li>Swift</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="example">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="img/dadABaseMobile.webp" type="image/webp">
+                        <source media="(max-width: 500px)" srcset="img/dadABaseMobile.jpg" type="image/jpg">
+                        <source srcset="img/dadABaseScreenshot.webp" type="image/webp">
+                        <img src="img/dadABaseScreenshot.jpg" alt="Screenshot of the Dad-a-Base"/>
+                    </picture>
+                    <button class="opener">
+                        <object data="img/icons/chevron-up.svg" type="image/svg+xml"></object>
+                    </button>
+                    <div class="flyover">
+                        <p class="name">The Dad-a-Base</p>
+                        <p class="description">The Dad-a-Base is an online repository for all my father's "Dad
+                            Jokes".</p>
+                        <a href="https://dad-a-base.tstark2.us" target="_blank">Visit Site &gt;</a>
+                        <ul>
+                            <li>React</li>
+                            <li>Firebase</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="example">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="img/duckHuntMobile.webp" type="image/webp">
+                        <source media="(max-width: 500px)" srcset="img/duckHuntMobile.jpg" type="image/jpg">
+                        <source srcset="img/duckHuntScreenshot.webp" type="image/webp">
+                        <img src="img/duckHuntScreenshot.jpg" alt="Screenshot of Duck Hunt"/>
+                    </picture>
+                    <button class="opener">
+                        <object data="img/icons/chevron-up.svg" type="image/svg+xml"></object>
+                    </button>
+                    <div class="flyover">
+                        <p class="name">Duck Hunt</p>
+                        <p class="description">Duck Hunt is a knock-off of the classic Nintendo game of the same
+                            name.</p>
+                        <a href="https://duck-hunt.tstark2.us" target="_blank">Visit Site &gt;</a>
+                        <ul>
+                            <li>jQuery</li>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-    <main>
-       <section id="work" class="hover">
-           <div class="wrapper">
-                <h2>My Work</h2>
-                <div class="container">
-                    <div class="example">
-                        <picture>
-                            <source srcset="img/kintripMobile.webp" type="image/webp" media="(max-width:500px)">
-                            <source srcset="img/kintripMobile.jpg" media="(max-width:500px)" type="image/jpg">
-                            <source srcset="img/kintripScreenshot.webp" type="image/webp" media="(min-width:500px)">
-                            <img src="img/kintripScreenshot.jpg" alt="Screenshot of Kintrip">
-                        </picture>
-                        <button class="opener"><object data="img/icons/chevron-up.svg" type="image/svg+xml"></object></button>
-                        <div class="flyover">
-                            <p class="name">Kintrip</p>
-                            <p class="description">Kintrip is a hyper-focused social media platform for traveling families.</p>
-                            <a href="https://kintrip.com" target="_blank">Visit Site &gt;</a>
-                            <ul>
-                                <li>Yii2</li>
-                                <li>AWS</li>
-                                <li>Swift</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="example">
-                        <picture>
-                            <source media="(max-width: 500px)" srcset="img/soraDashboardMobile.webp" type="image/webp">
-                            <source media="(max-width: 500px)" srcset="img/soraDashboardMobile.jpg" type="image/jpg">
-                            <source srcset="img/soraDashboardScreenshot.webp" type="image/webp">
-                            <img src="img/soraDashboardScreenshot.jpg" alt="Screenshot of Sora's Dashboard" />
-                        </picture>
-                        <button class="opener"><object data="img/icons/chevron-up.svg" type="image/svg+xml"></object></button>
-                        <div class="flyover">
-                            <p class="name">Sora Dashboard</p>
-                            <p>The Sora Dashboard aggregates and displays statistics and data about the company.</p>
-                            <a href="https://gitlab.com/soratech-open/dashboard" target="_blank">See Code &gt;</a>
-                            <ul>
-                                <li>Go</li>
-                                <li>PostgreSQL</li>
-                                <li>REST</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="example">
-                        <picture>
-                            <source media="(max-width: 500px)" srcset="img/chapterZMobile.webp" type="image/webp">
-                            <source media="(max-width: 500px)" srcset="img/chapterZMobile.png" type="image/png">
-                            <source srcset="img/chapterZ.webp" type="image/webp">
-                            <img src="img/chapterZ.png" alt="Screenshot of Chapter Z Website" />
-                        </picture>
-                        <button class="opener"><object data="img/icons/chevron-up.svg" type="image/svg+xml"></object></button>
-                        <div class="flyover">
-                            <p class="name">Chapter Z Website</p>
-                            <p class="description">The website of the local chapter of the GoldWing Road Rider's Association, Chapter Z.</p>
-                            <a href="https://www.il-chapter-z.org" target="_blank">Visit Site &gt;</a>
-                            <ul>
-                                <li>Node.js</li>
-                                <li>Vue</li>
-                                <li>Docker</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="example">
-                        <picture>
-                            <source media="(max-width: 500px)" srcset="img/dadABaseMobile.webp" type="image/webp">
-                            <source media="(max-width: 500px)" srcset="img/dadABaseMobile.jpg" type="image/jpg">
-                            <source srcset="img/dadABaseScreenshot.webp" type="image/webp">
-                            <img src="img/dadABaseScreenshot.jpg" alt="Screenshot of the Dad-a-Base" />
-                        </picture>
-                        <button class="opener"><object data="img/icons/chevron-up.svg" type="image/svg+xml"></object></button>
-                        <div class="flyover">
-                            <p class="name">The Dad-a-Base</p>
-                            <p class="description">The Dad-a-Base is an online repository for all my father's "Dad Jokes".</p>
-                            <a href="https://dad-a-base.tstark2.us" target="_blank">Visit Site &gt;</a>
-                            <ul>
-                                <li>React</li>
-                                <li>Firebase</li>
-                                <li>Node.js</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="example">
-                        <picture>
-                            <source media="(max-width: 500px)" srcset="img/duckHuntMobile.webp" type="image/webp">
-                            <source media="(max-width: 500px)" srcset="img/duckHuntMobile.jpg" type="image/jpg">
-                            <source srcset="img/duckHuntScreenshot.webp" type="image/webp">
-                            <img src="img/duckHuntScreenshot.jpg" alt="Screenshot of Duck Hunt" />
-                        </picture>
-                        <button class="opener"><object data="img/icons/chevron-up.svg" type="image/svg+xml"></object></button>
-                        <div class="flyover">
-                            <p class="name">Duck Hunt</p>
-                            <p class="description">Duck Hunt is a knock-off of the classic Nintendo game of the same name.</p>
-                            <a href="https://duck-hunt.tstark2.us" target="_blank">Visit Site &gt;</a>
-                            <ul>
-                                <li>jQuery</li>
-                                <li>HTML5</li>
-                                <li>CSS</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="example">
-                        <picture>
-                            <source media="(max-width: 500px)" srcset="img/benderMobile.webp" type="image/webp">
-                            <source media="(max-width: 500px)" srcset="img/benderMobile.png" type="image/png">
-                            <source srcset="img/bender.webp" type="image/webp">
-                            <img src="img/bender.png" alt="Screenshot of Bender" />
-                        </picture>
-                        <button class="opener"><object data="img/icons/chevron-up.svg" type="image/svg+xml"></object></button>
-                        <div class="flyover">
-                            <p class="name">Bender</p>
-                            <p class="description">Bender is a somewhat insulting chat bot for Slack, named after a <cite>Futurama</cite> character.</p>
-                            <a href="https://gitlab.com/soratech-open/bender-2.0" target="_blank">See Code &gt;</a>
-                            <ul>
-                                <li>Go</li>
-                                <li>Slack</li>
-                                <li>Azure</li>
-                            </ul>
-                        </div>
-                    </div>
+    </section>
+    <section id="about">
+        <div class="wrapper">
+            <h2>About Me</h2>
+            <div class="container">
+                <div class="text">
+                    <p>
+                        I love development, plain and simple. It really is the closest thing I know to magic;
+                        Both of them use special words to create something from nothing. I’ve been developing
+                        professionally since 2011,
+                        and my sense of wonder still hasn’t faded. I primarily work in JavaScript and Go, but I’m always
+                        up for learning something new.
+                        If you have a project you want me to take a look at, email me at <a
+                            href="mailto:todd@tstark2.us">todd@tstark2.us</a>,
+                        or use the social links below to find me out on the web. I'm currently working as a Developer at
+                        Bayer Crop Sciences.
+                    </p>
+                    <p>
+                        When I’m not developing, I enjoy reading, playing games, riding my motorcycle and playing the
+                        guitar.
+                        I live in Dunlap Illinois with my wife, our dog, and two cats.
+                    </p>
                 </div>
-            </div>
-       </section>
-       <section id="about">
-           <div class="wrapper">
-                <h2>About Me</h2>
-                <div class="container">
-                        <div class="text">
-                            <p>
-                                I love development, plain and simple. It really is the closest thing I know to magic;
-                                Both of them use special words to create something from nothing. I’ve been developing professionally since 2011,
-                                and my sense of wonder still hasn’t faded. I primarily work in PHP, JavaScript, and Go, but I’m always up for learning something new.
-                                If you have a project you want me to take a look at, email me at <a href="mailto:todd@tstark2.us">todd@tstark2.us</a>,
-                                or use the social links below to find me out on the web. I'm currently working as a Developer at Bayer Crop Sciences.
-                            </p>
-                            <p>
-                                When I’m not developing, I enjoy reading, playing games, riding my motorcycle and playing the guitar.
-                                I live in Dunlap Illinois with my wife, our dog, and two cats.
-                            </p>
-                        </div>
-                        <div>
-                            <picture>
-                                <source media="(max-width: 500px)" srcset="img/headshotMobile.webp" type="image/webp">
-                                <source media="(max-width: 500px)" srcset="img/headshotMobile.jpg" type="image/jpg">
-                                <source srcset="img/headshotWedding.webp" type="image/webp">
-                                <img src="img/headshotWedding.jpg" alt="A picture of Todd in a tuxedo and bowtie." />
-                            </picture>
+                <div>
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="img/headshotMobile.webp" type="image/webp">
+                        <source media="(max-width: 500px)" srcset="img/headshotMobile.jpg" type="image/jpg">
+                        <source srcset="img/headshotWedding.webp" type="image/webp">
+                        <img src="img/headshotWedding.jpg" alt="A picture of Todd in a tuxedo and bowtie."/>
+                    </picture>
 
-                        </div>
-                    </div>
-            </div>
-       </section>
-       <section id="contact">
-           <div class="wrapper">
-                <h2>Contact Me</h2>
-                <div id="icons">
-                    <a href="mailto:todd@tstark2.us" title="Email" target="_blank"><object data="img/icons/email.svg" type="image/svg+xml"></object></a>
-                    <a href="https://www.linkedin.com/in/todd-stark-ii/" title="LinkedIn" target="_blank"><object data="img/icons/linkedin.svg" type="image/svg+xml"></object></a>
-                    <a href="https://twitter.com/t_stark2" title="Twitter" target="_blank"><object data="img/icons/twitter.svg" type="image/svg+xml"></object></a>
-                    <a href="https://dev.to/tstark2" title="Dev.to" target="_blank"><object data="img/icons/dev-to.svg" type="image/svg+xml"></object></a>
-                    <a href="https://stackoverflow.com/users/story/4483489" title="Stack Overflow" target="_blank"><object data="img/icons/stack-overflow.svg" type="image/svg+xml"></object></a>
-                    <a href="https://gitlab.com/tstark2" title="GitLab" target="_blank"><object data="img/icons/gitlab.svg" type="image/svg+xml"></object></a>
-                    <a href="https://github.com/tstark2" title="GitHub" target="_blank"><object data="img/icons/github-circle.svg" type="image/svg+xml"></object></a>
-                    <a href="/tstarkResume.pdf" title="Resume PDF" target="_blank"><object data="img/icons/file-pdf.svg" type="image/svg+xml"></object></a>
-                    <a href="/tstarkResume.docx" title="Resume DOCX" target="_blank"><object data="img/icons/file-word.svg" type="image/svg+xml"></object></a>
                 </div>
-           </div>
-       </section>
-    </main>
-    <footer>
-        <p>&copy; <span id="copyYear"></span> Todd Stark II</p>
-    </footer>
-    <script src="js/index.js" type="module"></script>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="wrapper">
+            <h2>Contact Me</h2>
+            <div id="icons">
+                <a href="mailto:todd@tstark2.us" title="Email" target="_blank">
+                    <object data="img/icons/email.svg" type="image/svg+xml"></object>
+                </a>
+                <a href="https://www.linkedin.com/in/todd-stark-ii/" title="LinkedIn" target="_blank">
+                    <object data="img/icons/linkedin.svg" type="image/svg+xml"></object>
+                </a>
+                <!--                    <a href="https://twitter.com/t_stark2" title="Twitter" target="_blank"><object data="img/icons/twitter.svg" type="image/svg+xml"></object></a>-->
+                <a href="https://dev.to/tstark2" title="Dev.to" target="_blank">
+                    <object data="img/icons/dev-to.svg" type="image/svg+xml"></object>
+                </a>
+                <!--                    <a href="https://stackoverflow.com/users/story/4483489" title="Stack Overflow" target="_blank"><object data="img/icons/stack-overflow.svg" type="image/svg+xml"></object></a>-->
+                <a href="https://gitlab.com/tstark2" title="GitLab" target="_blank">
+                    <object data="img/icons/gitlab.svg" type="image/svg+xml"></object>
+                </a>
+                <!--                    <a href="https://github.com/tstark2" title="GitHub" target="_blank"><object data="img/icons/github-circle.svg" type="image/svg+xml"></object></a>-->
+                <a href="/tstarkResume.pdf" title="Resume PDF" target="_blank">
+                    <object data="img/icons/file-pdf.svg" type="image/svg+xml"></object>
+                </a>
+                <a href="/tstarkResume.docx" title="Resume DOCX" target="_blank">
+                    <object data="img/icons/file-word.svg" type="image/svg+xml"></object>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; <span id="copyYear"></span> Todd Stark II</p>
+</footer>
+<script src="js/index.js" type="module"></script>
 </body>
 </html>
